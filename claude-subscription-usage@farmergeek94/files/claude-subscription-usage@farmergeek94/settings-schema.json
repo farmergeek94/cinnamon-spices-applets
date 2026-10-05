@@ -1,0 +1,71 @@
+{
+    "panel-header": {
+        "type": "header",
+        "description": "Panel"
+    },
+    "panel-limit": {
+        "type": "combobox",
+        "default": "session",
+        "description": "Limit shown in the panel",
+        "options": {
+            "Current session": "session",
+            "Current week": "weekly",
+            "Whichever is highest": "highest"
+        }
+    },
+    "show-percentage": {
+        "type": "switch",
+        "default": true,
+        "description": "Show the percentage used"
+    },
+    "show-countdown": {
+        "type": "switch",
+        "default": false,
+        "description": "Show the time left until the limit resets"
+    },
+    "show-bar": {
+        "type": "switch",
+        "default": true,
+        "description": "Show a usage bar",
+        "tooltip": "The bar is hidden in vertical panels."
+    },
+    "menu-header": {
+        "type": "header",
+        "description": "Menu"
+    },
+    "show-inactive": {
+        "type": "switch",
+        "default": true,
+        "description": "Show limits that Claude reports as inactive",
+        "tooltip": "Claude marks which of your limits are currently the active ones. Turn this off to leave the others out of the menu and tooltip."
+    },
+    "show-credits": {
+        "type": "switch",
+        "default": true,
+        "description": "Show extra usage spend"
+    },
+    "updates-header": {
+        "type": "header",
+        "description": "Updates"
+    },
+    "update-interval": {
+        "type": "spinbutton",
+        "default": 3,
+        "min": 1,
+        "max": 60,
+        "step": 1,
+        "units": "minutes",
+        "description": "Check usage every",
+        "tooltip": "Claude limits how often usage can be checked. If the applet reports being rate limited, raise this."
+    },
+    "credentials-path": {
+        "type": "filechooser",
+        "default": "",
+        "description": "Alternate credentials file",
+        "tooltip": "The Claude Code credentials file to read. Leave empty to use ~/.claude/.credentials.json."
+    },
+    "state": {
+        "type": "generic",
+        "default": {}
+    }
+}

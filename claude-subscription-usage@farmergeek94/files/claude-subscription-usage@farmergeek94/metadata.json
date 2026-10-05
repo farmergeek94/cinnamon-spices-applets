@@ -1,0 +1,7 @@
+{
+    "uuid": "claude-subscription-usage@farmergeek94",
+    "name": "Claude Subscription Usage",
+    "description": "Shows how much of your Claude subscription's session and weekly limits you have used",
+    "version": "1.0.0",
+    "author": "farmergeek94"
+}

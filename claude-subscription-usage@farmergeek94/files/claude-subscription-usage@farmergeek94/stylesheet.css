@@ -1,0 +1,84 @@
+/* Bars: a track with a fill inside it. The widths here must match
+   PANEL_BAR_WIDTH and MENU_BAR_WIDTH in applet.js. */
+
+.csu-track {
+    height: 6px;
+    border-radius: 3px;
+    background-color: rgba(128, 128, 128, 0.35);
+}
+
+.csu-panel-track {
+    width: 36px;
+}
+
+.csu-fill {
+    height: 6px;
+    border-radius: 3px;
+}
+
+.csu-fill.csu-normal {
+    background-color: #4ea1e6;
+}
+
+.csu-fill.csu-warning {
+    background-color: #f5a623;
+}
+
+.csu-fill.csu-critical {
+    background-color: #e5534b;
+}
+
+/* Text takes the theme's colour unless a limit is close to full. */
+
+.applet-label.csu-warning,
+.csu-value.csu-warning {
+    color: #f5a623;
+}
+
+.applet-label.csu-critical,
+.csu-value.csu-critical {
+    color: #e5534b;
+}
+
+/* Menu */
+
+.csu-card {
+    width: 270px;
+    padding: 6px 16px 2px 16px;
+    spacing: 10px;
+}
+
+.csu-row {
+    spacing: 8px;
+}
+
+.csu-bar-group {
+    spacing: 3px;
+}
+
+.csu-title,
+.csu-value {
+    font-weight: bold;
+}
+
+.csu-small {
+    font-size: 0.85em;
+}
+
+.csu-pill {
+    font-size: 0.8em;
+    color: #e5534b;
+    border: 1px solid rgba(229, 83, 75, 0.5);
+    border-radius: 8px;
+    padding: 0 6px;
+}
+
+.csu-refresh {
+    padding: 3px;
+    border-radius: 4px;
+}
+
+.csu-refresh:hover,
+.csu-refresh:focus {
+    background-color: rgba(128, 128, 128, 0.3);
+}
